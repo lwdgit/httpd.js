@@ -1,0 +1,53 @@
+{
+  "name": "httpd.js",
+  "version": "1.0.0",
+  "description": "a simple static web server ",
+  "preferGlobal": true,
+  "bin": {
+    "httpd.js": "index.js"
+  },
+  "main": "httpd.js",
+  "scripts": {
+    "test": "ava",
+    "rollup": "rollup -c",
+    "add": "git add -A"
+  },
+  "precommit": {
+    "run": [
+      "rollup",
+      "test",
+      "add"
+    ]
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "pre-commit": "^1.2.2",
+    "rollup": "^0.41.4",
+    "rollup-plugin-babel": "^2.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwdgit/httpd.js.git"
+  },
+  "author": "liwen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwdgit/httpd.js/issues"
+  },
+  "homepage": "https://github.com/lwdgit/httpd.js#readme",
+  "keywords": [
+    "web server",
+    "static web server",
+    "http",
+    "httpd.js"
+  ],
+  "directories": {
+    "test": "test"
+  }
+}
