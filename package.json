@@ -1,6 +1,6 @@
 {
   "name": "httpd.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple static web server ",
   "preferGlobal": true,
   "bin": {
